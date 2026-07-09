@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAHUL BASAK — WEB DEVELOPER</title>
+  <meta name="description" content="RAHUL BASAK — WEB DEVELOPER. Passionate Full Stack Developer with 1+ years of hands-on experience building modern web applications.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==========================================
+       NAVIGATION
+       ========================================== -->
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">
+        <span class="p">&lt;rahul</span><span class="s"> basak /&gt;</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#experience">education</a>
+        <a href="#skills">skills</a>
+        <a href="#game-section">bonus level</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO / HEADER
+       ========================================== -->
+  <header id="top">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <div class="terminal-prompt">
+          <span class="path">~/rahul-basak</span> $ <span class="cmd">whoami</span>
+        </div>
+        <h1>
+          <span class="grad-text">RAHUL BASAK</span><br>
+          <span style="font-size: 38px; font-weight: 600; opacity: 0.9;">WEB DEVELOPER</span>
+        </h1>
+        <p class="hero-pitch">
+          Passionate Full Stack Developer with 1+ years of hands-on experience building modern web applications. Specialized in React, Next.js, and backend technologies. I love creating efficient, scalable solutions and working with cutting-edge technologies.
+        </p>
+        <div class="typewriter-container">
+          <span>&gt; focus: </span><span id="typed"></span><span class="typewriter-caret"></span>
+        </div>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-number">1+</span>
+            <span class="metric-label">Years Experience</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">3</span>
+            <span class="metric-label">Core Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hologram-container">
+          <canvas id="hologram-canvas" width="350" height="350" aria-label="Interactive 3D Holographic Globe"></canvas>
+          <div class="hologram-glow"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       TICKER
+       ========================================== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span><span class="method">GET</span> /resume/rahul-basak → <span class="status-ok">200 OK</span></span>
+      <span><span class="method">GET</span> /location/falakata-india → <span class="status-ok">200 OK</span></span>
+      <span><span class="method">GET</span> /projects/codequest → <span class="status-ok">200 OK</span></span>
+      <span><span class="method">GET</span> /projects/campaignpulse → <span class="status-ok">200 OK</span></span>
+      <span><span class="method">GET</span> /projects/portfolio-demo → <span class="status-ok">200 OK</span></span>
+      <span><span class="method">POST</span> /hire-me → <span class="status-ok">awaiting your response...</span></span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       ABOUT & CONFIG SECTION
+       ========================================== -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-left">
+        <span class="eyebrow">about me</span>
+        <h2>Building dynamic products from the ground up.</h2>
+        <p>
+          I am a Full Stack Developer located in Falakata, India. My passion is to engineer responsive, highly-optimized interfaces while linking them with performant backend servers and database structures.
+        </p>
+        <p>
+          I leverage cutting-edge technologies to implement modular frontend systems, and build scalable architectures. I love solving workflow bottlenecks and crafting visual designs that provide clean, fluid user experiences.
+        </p>
+      </div>
+      <div class="about-right">
+        <!-- Javascript Configuration Display -->
+        <div class="config-card">
+          <div class="config-header">// rahul.config.js</div>
+          <div class="config-line"><span class="cfg-key">const</span> devConfig = {</div>
+          <div class="config-line">  <span class="cfg-key">name</span>: <span class="cfg-string">"RAHUL BASAK"</span>,</div>
+          <div class="config-line">  <span class="cfg-key">role</span>: <span class="cfg-string">"WEB DEVELOPER"</span>,</div>
+          <div class="config-line">  <span class="cfg-key">location</span>: <span class="cfg-string">"FALAKATA, INDIA"</span>,</div>
+          <div class="config-line">  <span class="cfg-key">email</span>: <span class="cfg-string">"rahul01102004@gmail.com"</span>,</div>
+          <div class="config-line">  <span class="cfg-key">github</span>: <span class="cfg-string">"github.com/rahultheeagle"</span>,</div>
+          <div class="config-line">  <span class="cfg-key">openToOpportunities</span>: <span class="cfg-bool">true</span></div>
+          <div class="config-line">};</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROJECTS GRID
+       ========================================== -->
+  <section id="projects">
+    <div class="wrap">
+      <span class="eyebrow">portfolio</span>
+      <h2>PERSONAL PROJECTS</h2>
+      <p class="lead">Highlights of key works and web systems I have designed and deployed:</p>
+      
+      <div class="projects-grid">
+        <a class="glass-panel proj-card" href="https://rahultheeagle.github.io/CodeQuest/" target="_blank">
+          <div class="proj-tag">Interactive Learning Platform</div>
+          <h3>CodeQuest</h3>
+          <p>
+            Developed an interactive web app for learning front-end development using HTML, CSS, and JS. Features a real-time browser-based code editor and a gamified XP/Leveling system. Implemented LocalStorage for progress persistence and designed a fully responsive, dark-mode UI.
+          </p>
+          <div class="proj-stack">HTML · CSS · JS · LocalStorage · Dark-Mode ↗</div>
+        </a>
+
+        <a class="glass-panel proj-card" href="https://m-arketing.vercel.app/" target="_blank">
+          <div class="proj-tag">Marketing Analytics Dashboard</div>
+          <h3>CampaignPulse</h3>
+          <p>
+            Designed and deployed a marketing analytics platform focused on tracking KPIs. Leveraged modern CSS Grid/Flexbox for a sleek dashboard layout and implemented dynamic data modules to help users monitor campaign health and conversion rates effectively.
+          </p>
+          <div class="proj-stack">CSS Grid · Flexbox · Analytics DOM · Vercel ↗</div>
+        </a>
+
+        <a class="glass-panel proj-card" href="https://rahultheeagle.github.io/my-portfolio-demo/" target="_blank">
+          <div class="proj-tag">Web Development Foundation</div>
+          <h3>Portfolio Demo</h3>
+          <p>
+            Developed a clean, multi-page website architecture to master the fundamentals of semantic HTML5 and CSS3. Focused on creating a professional UI with a mobile-first responsive layout, optimized navigation flow, and modern dark-mode aesthetics to demonstrate core frontend development skills.
+          </p>
+          <div class="proj-stack">HTML5 · CSS3 · Navigation · Mobile-First ↗</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TIMELINE (EDUCATION ONLY)
+       ========================================== -->
+  <section id="experience">
+    <div class="wrap">
+      <span class="eyebrow" style="text-align: center;">timeline</span>
+      <h2 style="text-align: center; font-size: 38px; margin-bottom: 40px;">EDUCATION</h2>
+
+      <div class="timeline-container">
+        <div class="timeline-pane active">
+          <!-- BTech Civil Engineering -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="t-role">BTech in Civil Engineering — 1st Year (Ongoing)</div>
+              <div class="t-org">COOCHBEHAR GOVERNMENT ENGINEERING COLLEGE · <span class="dates">COOCHBEHAR</span></div>
+              <ul>
+                <li>Currently pursuing foundational engineering coursework, covering mechanics, mathematics, and engineering design principles.</li>
+                <li>Developing structural analysis understanding alongside technical software computing methods.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- BSc Computer Science -->
+          <div class="timeline-item" style="margin-top: 30px;">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="t-role">BSc in Computer Science (Completed 3rd Year, 5th Sem)</div>
+              <div class="t-org">Undergraduate Institution · <span class="dates">Completed up to 5th Sem</span></div>
+              <ul>
+                <li>Acquired strong conceptual and practical foundations in programming paradigms, database architectures, and algorithms.</li>
+                <li>Completed coursework and laboratory sessions covering core software development topics.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SKILLS INVENTORY
+       ========================================== -->
+  <section id="skills">
+    <div class="wrap">
+      <span class="eyebrow">capabilities</span>
+      <h2 style="font-size: 38px; margin-bottom: 48px;">SKILLS</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><span class="dot"></span>Frontend &amp; Languages</h3>
+          <div class="skill-badges">
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JAVASCRIPT</span>
+            <span class="skill-badge">PYTHON</span>
+            <span class="skill-badge">REACT JS</span>
+            <span class="skill-badge">NEXT JS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><span class="dot"></span>Backend &amp; DevOps</h3>
+          <div class="skill-badges">
+            <span class="skill-badge">NODE JS</span>
+            <span class="skill-badge">MONGODB</span>
+            <span class="skill-badge">GIT</span>
+            <span class="skill-badge">GITHUB</span>
+            <span class="skill-badge">DOCKER</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><span class="dot"></span>Data &amp; Machine Learning</h3>
+          <div class="skill-badges">
+            <span class="skill-badge">MACHINE LEARNING</span>
+            <span class="skill-badge">TENSORFLOW</span>
+            <span class="skill-badge">PYTORCH</span>
+            <span class="skill-badge">SCIKIT LEARN</span>
+            <span class="skill-badge">DATA MANAGEMENT</span>
+          </div>
+        </div>
+        <div class="skill-category" style="grid-column: span 3; margin-top: 15px;">
+          <h3><span class="dot"></span>Professional &amp; Management</h3>
+          <div class="skill-badges">
+            <span class="skill-badge">PROJECT MANAGEMENT</span>
+            <span class="skill-badge">TEAM COLLABORATION</span>
+            <span class="skill-badge">TECHNICAL WRITING</span>
+            <span class="skill-badge">MULTITASKING</span>
+            <span class="skill-badge">WEB PROGRAMMING</span>
+            <span class="skill-badge">TEAM MANAGEMENT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BONUS LEVEL (STARTUP CLICKER GAME)
+       ========================================== -->
+  <section id="game-section">
+    <div class="wrap game-container">
+      <span class="eyebrow" style="text-align: center;">interactive widget</span>
+      <h2 style="text-align: center; font-size: 38px; margin-bottom: 12px;">Startup Clicker — Scale the Code</h2>
+      <p class="lead" style="text-align: center; margin: 0 auto 40px auto;">
+        Click the central server node to write Lines of Code (LoC). Buy automated developer upgrades to scale your production and grow your startup!
+      </p>
+
+      <div class="game-shell">
+        <div class="game-titlebar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="fname">startup-clicker.js — cloud_console</span>
+        </div>
+        <div class="game-hud" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+          <span class="score">Codebase: <b id="g-score">0 LoC</b></span>
+          <span class="hi">Peak Record: <b id="g-hi">0 LoC</b></span>
+          <span class="lives">Speed: <b id="g-rate">0 LoC/s</b></span>
+          <button id="g-submit-score" class="btn btn-ghost" style="padding: 4px 10px; font-size: 11px; font-family: var(--font-mono); border-color: rgba(0, 255, 135, 0.3); color: var(--accent-green); cursor: pointer;">[Save Valuation]</button>
+        </div>
+        <div class="game-canvas-wrap">
+          <canvas id="game-canvas" width="800" height="450" aria-label="Startup Clicker mini game: Click the server to generate LoC and buy tech upgrades"></canvas>
+          <div class="game-overlay" id="g-overlay">
+            <h3 id="g-title">Boot Up Servers?</h3>
+            <p id="g-msg">Click the database core to write code, then click shop items on the right side of the screen to buy upgrades.</p>
+            
+            <!-- Save Score Form -->
+            <div id="save-score-form" style="display: none; margin: 15px 0; background: rgba(255,255,255,0.03); border: 1px solid var(--border-light); padding: 15px; border-radius: 8px; width: 100%; max-width: 320px; text-align: center;">
+              <div style="font-size: 13px; margin-bottom: 8px; color: var(--accent-cyan); font-family: var(--font-mono);">VALUATION: <span id="final-loc-score">0</span> LoC</div>
+              <input type="text" id="player-name-input" placeholder="Enter name / handle" maxlength="15" style="background: rgba(0,0,0,0.4); border: 1px solid var(--border-light); padding: 8px; border-radius: 4px; color: #fff; width: 100%; text-align: center; margin-bottom: 10px; font-family: var(--font-mono); outline: none;">
+              <button class="btn btn-primary" id="save-score-btn" style="padding: 8px 16px; font-size: 12px; width: 100%;">⚡ Save to Leaderboard</button>
+            </div>
+
+            <p class="legend" id="g-legend"><span class="c-commit">🚀 Tap core to code manually</span> &nbsp;·&nbsp; <span class="c-bug">⚙️ Automate to grow exponentially</span></p>
+            <button class="btn btn-primary" id="g-start">▶ npm run start --prod</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simulated leaderboard -->
+      <div class="glass-panel" style="margin-top: 24px; padding: 20px 32px; border-radius: 12px; position: relative;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <h3 style="font-size: 18px; font-family: var(--font-heading);" class="grad-text">Top Shippers Leaderboard</h3>
+          <button id="clear-leaderboard" class="btn btn-ghost" style="padding: 4px 10px; font-size: 11px; font-family: var(--font-mono); border-color: rgba(255, 0, 127, 0.2); color: var(--accent-pink); cursor: pointer;">[reset leaderboard]</button>
+        </div>
+        <ol id="lb-list" style="list-style: none; font-family: var(--font-mono); font-size: 14px; display: flex; flex-direction: column; gap: 8px;">
+          <!-- Populated by Javascript -->
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT
+       ========================================== -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-left">
+        <div>
+          <span class="eyebrow">connect</span>
+          <h2>Hire a Developer who delivers.</h2>
+          <p class="lead">
+            I am actively seeking full-time opportunities or consulting projects where I can write clean code, design robust architectures, and build polished interfaces. 
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 15px; line-height: 1.7;">
+            If you need an engineering partner who bridges technical skills (HTML, CSS, JS, Python, React, Next.js, Node.js) with clean execution, let's start a conversation.
+          </p>
+        </div>
+        <div style="margin-top: 10px;">
+          <a href="mailto:rahul01102004@gmail.com" class="btn btn-primary" style="gap: 8px;">
+            ⚡ Email Me Direct
+          </a>
+        </div>
+      </div>
+
+      <!-- Advanced Recruiter Console Profile Card -->
+      <div class="glass-panel contact-form-card" style="padding: 24px;">
+        <div class="game-titlebar" style="margin: -24px -24px 20px -24px; border-radius: 12px 12px 0 0;">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="fname">recruiter_gateway.json — logs</span>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 13.5px; line-height: 1.8;">
+          <div><span class="cfg-key">const</span> developerContact = {</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">status</span>: <span class="cfg-string">"Active / Open to Hire"</span>,</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">location</span>: <span class="cfg-string">"Falakata, India"</span>,</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">email</span>: <a href="mailto:rahul01102004@gmail.com" class="cfg-string" style="text-decoration: underline;">"rahul01102004@gmail.com"</a>,</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">phone</span>: <a href="tel:+918436401882" class="cfg-string" style="text-decoration: underline;">"+91 8436401882"</a>,</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">github</span>: <a href="https://github.com/rahultheeagle" target="_blank" class="cfg-string" style="text-decoration: underline;">"github.com/rahultheeagle"</a>,</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">linkedin</span>: <a href="https://linkedin.com/in/rahul-basak-766991370" target="_blank" class="cfg-string" style="text-decoration: underline;">"linkedin.com/in/rahul-basak-766991370"</a>,</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">twitterX</span>: <a href="https://x.com/RahulTheEagle" target="_blank" class="cfg-string" style="text-decoration: underline;">"x.com/RahulTheEagle"</a>,</div>
+          <div style="padding-left: 20px;"><span class="cfg-key">portfolio</span>: <a href="https://rahultheeagle.github.io/rahul-basak-portfolio/" target="_blank" class="cfg-string" style="text-decoration: underline;">"rahultheeagle.github.io/..."</a></div>
+          <div>};</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="wrap">
+      Designed &amp; Developed by RAHUL BASAK · <span class="status">status: 200 OK</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
